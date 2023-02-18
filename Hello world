@@ -1,5 +1,7 @@
 Report Hello World.
 
-Write 'Hello World'.
-
-Write : /'Hello','world',/'i', 'am','harishankar'.
+Write 'Hello World'. 
+skip to line 10.
+Write : 'Hello','world', / 'i', 'am','harishankar'." partial commend
+uline.
+* This is commend line
