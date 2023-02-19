@@ -1,12 +1,12 @@
-DATA : a type I value 344, b type I, suma type I value 0, ca type i.
+DATA : a type I value 100, b type I, suma type I value 0, cm type I value 0.
 
-ca = a.
-
-while suma =< ca.
+while cm = 0.
 
 b = a mod 10.
 suma = ( suma * 10 ) + b.
 a = ( a - b ) / 10.
-
+if a = 0.
+exit.
+endif.
 endwhile.
-write : suma.
+write suma.
