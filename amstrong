@@ -1,0 +1,37 @@
+DATA : a type I value 1634, b type I value 0, ca type I, cm type I, total type I value 1, r type I, e type I, final type I value 0.
+
+cm = a.
+ca = a.
+
+while cm > 0.
+
+cm = ( cm - ( cm mod 10 ) ) / 10.
+b = b + 1.
+
+endwhile.
+
+e = b.
+r = b.
+
+while b > 0.
+b = b - 1.
+r = e.
+
+while r > 0.
+total = ca mod 10 * total.
+r = r - 1.
+endwhile.
+
+ca = ( ca - ca mod 10 ) / 10.
+
+final = final + total.
+total = 1.
+endwhile.
+if a = final.
+write 'amstrong'.
+ELSE.
+write 'not amstrong'.
+endif.
+
+
+
