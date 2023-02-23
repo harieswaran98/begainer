@@ -1,0 +1,10 @@
+data : a type i value 0, b type i value 1, ca type i value 35, cb type i, cc type i.
+
+write : a , b.
+while ca > 2.
+ca = ca - 1.
+cb = a + b.
+a = b.
+b = cb.
+write cb.
+ENDWHILE.
