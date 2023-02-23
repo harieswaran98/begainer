@@ -1,0 +1,16 @@
+data : a type i value 997, b type i value 0, ca type i, cb type i, cc type i.
+
+ca = a - 1.
+while ca > 1.
+if a mod ca = 0.
+b = 1.
+endif.
+ca = ca - 1.
+endwhile.
+if b = 1.
+write 'not prime'.
+endif.
+if b = 0.
+write 'prime'.
+
+endif.
