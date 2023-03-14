@@ -1,0 +1,16 @@
+data : a type i value 0, b type i, ca type i, cb type i, cd type i value 9.
+
+ca = cd - 1.
+while ca > 0.
+cb = cd mod ca.
+if cb = 0.
+a = a + ca.
+endif.
+ca = ca - 1.
+endwhile.
+if a = cd.
+write :'perfect number', cd.
+endif.
+if a <> cd.
+write : 'not perfect', cd.
+endif.
